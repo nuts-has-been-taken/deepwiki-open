@@ -14,7 +14,7 @@
 [![Twitter/X](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/sashimikun_void)
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/VQMBGR8u5v)
 
-[English](./README.md) | [简体中文](./README.zh.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.kr.md) | [Tiếng Việt](./README.vi.md) | [Português Brasileiro](./README.pt-br.md)
+[English](./README.md) | [简体中文](./README.zh.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.kr.md) | [Tiếng Việt](./README.vi.md) | [Português Brasileiro](./README.pt-br.md) | [Français](./README.fr.md)
 
 ## ✨ Recursos
 
@@ -249,7 +249,7 @@ Se você deseja usar modelos de embedding compatíveis com a API OpenAI (como Al
 2. No arquivo `.env` da raiz do seu projeto, defina as variáveis de ambiente relevantes, por exemplo:
    ```
    OPENAI_API_KEY=sua_chave_api
-   OPENAI_API_BASE_URL=seu_endpoint_compativel_openai
+   OPENAI_BASE_URL=seu_endpoint_compativel_openai
    ```
 3. O programa substituirá automaticamente os espaços reservados em embedder.json pelos valores de suas variáveis de ambiente.
 

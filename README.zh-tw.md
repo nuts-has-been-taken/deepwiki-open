@@ -14,7 +14,7 @@
 [![Twitter/X](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/sashimikun_void)
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/VQMBGR8u5v)
 
-[English](./README.md) | [简体中文](./README.zh.md) | [繁體中文](./README.zh-tw.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.kr.md) | [Tiếng Việt](./README.vi.md)
+[English](./README.md) | [简体中文](./README.zh.md) | [繁體中文](./README.zh-tw.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.kr.md) | [Tiếng Việt](./README.vi.md) | [Português Brasileiro](./README.pt-br.md) | [Français](./README.fr.md)
 
 ## ✨ 特點
 
@@ -256,7 +256,7 @@ OpenAI 客戶端的 base_url 設定主要為擁有私有 API 通道的企業使�
 2. 在專案根目錄的 `.env` 檔案中，設定相關的環境變數，例如：
    ```
    OPENAI_API_KEY=your_api_key
-   OPENAI_API_BASE_URL=your_openai_compatible_endpoint
+   OPENAI_BASE_URL=your_openai_compatible_endpoint
    ```
 3. 程式會自動用環境變數的值替換 embedder.json 中的預留位置。
 

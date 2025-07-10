@@ -2,6 +2,9 @@ import logging
 import os
 from pathlib import Path
 
+class IgnoreLogChangeDetectedFilter(logging.Filter):
+    def filter(self, record: logging.LogRecord):
+        return "Detected file change in" not in record.getMessage()
 
 def setup_logging(format: str = None):
     """
@@ -41,6 +44,10 @@ def setup_logging(format: str = None):
         ],
         force=True
     )
+    
+    # Ignore log file's change detection
+    for handler in logging.getLogger().handlers:
+        handler.addFilter(IgnoreLogChangeDetectedFilter())
 
     # Initial debug message to confirm configuration
     logger = logging.getLogger(__name__)

@@ -14,7 +14,7 @@
 [![Twitter/X](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/sashimikun_void)
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/VQMBGR8u5v)
 
-[English](./README.md) | [简体中文](./README.zh.md) | [繁體中文](./README.zh-tw.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.kr.md) | [Tiếng Việt](./README.vi.md) | [Português Brasileiro](./README.pt-br.md)
+[English](./README.md) | [简体中文](./README.zh.md) | [繁體中文](./README.zh-tw.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.kr.md) | [Tiếng Việt](./README.vi.md) | [Português Brasileiro](./README.pt-br.md) | [Français](./README.fr.md)
 
 ## ✨ Features
 
@@ -263,7 +263,7 @@ If you want to use embedding models compatible with the OpenAI API (such as Alib
 2. In your project root `.env` file, set the relevant environment variables, for example:
    ```
    OPENAI_API_KEY=your_api_key
-   OPENAI_API_BASE_URL=your_openai_compatible_endpoint
+   OPENAI_BASE_URL=your_openai_compatible_endpoint
    ```
 3. The program will automatically substitute placeholders in embedder.json with the values from your environment variables.
 

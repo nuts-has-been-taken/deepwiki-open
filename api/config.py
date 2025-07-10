@@ -102,7 +102,7 @@ def load_json_config(filename):
             logger.warning(f"Configuration file {config_path} does not exist")
             return {}
 
-        with open(config_path, 'r') as f:
+        with open(config_path, 'r', encoding='utf-8') as f:
             config = json.load(f)
             config = replace_env_placeholders(config)
             return config
@@ -192,7 +192,9 @@ def load_lang_config():
             "zh-tw": "Traditional Chinese (繁體中文)",
             "es": "Spanish (Español)",
             "kr": "Korean (한국어)",
-            "vi": "Vietnamese (Tiếng Việt)"
+            "vi": "Vietnamese (Tiếng Việt)",
+            "pt-br": "Brazilian Portuguese (Português Brasileiro)",
+            "fr": "Français (French)"
         },
         "default": "en"
     }
