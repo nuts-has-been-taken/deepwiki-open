@@ -1203,32 +1203,6 @@ IMPORTANT:
         };
 
         const githubApiBaseUrl = getGithubApiUrl(effectiveRepoInfo.repoUrl);
-
-        // Determine the GitHub API base URL based on the repository URL
-        const getGithubApiUrl = (repoUrl: string | null): string => {
-          if (!repoUrl) {
-            return 'https://api.github.com'; // Default to public GitHub
-          }
-          
-          try {
-            const url = new URL(repoUrl);
-            const hostname = url.hostname;
-            
-            // If it's the public GitHub, use the standard API URL
-            if (hostname === 'github.com') {
-              return 'https://api.github.com';
-            }
-            
-            // For GitHub Enterprise, use the enterprise API URL format
-            // GitHub Enterprise API URL format: https://github.company.com/api/v3
-            return `${url.protocol}//${hostname}/api/v3`;
-          } catch {
-            return 'https://api.github.com'; // Fallback to public GitHub if URL parsing fails
-          }
-        };
-
-        const githubApiBaseUrl = getGithubApiUrl(effectiveRepoInfo.repoUrl);
-
         // First, try to get the default branch from the repository info
         let defaultBranchLocal = null;
         try {
